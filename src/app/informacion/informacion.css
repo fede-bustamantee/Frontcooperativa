@@ -1,0 +1,91 @@
+:root {
+    --primary-color: #65d1ff;
+    --secondary-color: #6c757d;
+    --background-color: #f9f9f9;
+    --container-background-color: #ffffff;
+    --text-color-light: #ece8e8;
+    --text-color-dark: #333333;
+    --link-hover-color: #0056b3;
+    --border-radius: 8px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color-dark);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.contenedor-nosotros {
+    background-color: var(--container-background-color);
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    padding: 40px;
+    text-align: center;
+    max-width: 800px;
+    width: 100%;
+}
+
+.contenedor-nosotros h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+.contenedor-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.imagen-instituto {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contenedor-texto p {
+    font-size: 1.1rem;
+    color: var(--secondary-color);
+    margin-bottom: 20px;
+}
+
+.contenedor-texto a {
+    font-size: 1.1rem;
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+
+.contenedor-texto a:hover {
+    color: var(--link-hover-color);
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    .contenedor-nosotros {
+        padding: 20px;
+    }
+
+    .contenedor-nosotros h1 {
+        font-size: 2rem;
+    }
+
+    .imagen-instituto {
+        width: 200px;
+    }
+
+    .contenedor-texto p, .contenedor-texto a {
+        font-size: 1rem;
+    }
+}
