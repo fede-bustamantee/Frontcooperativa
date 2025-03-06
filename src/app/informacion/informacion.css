@@ -15,11 +15,8 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: var(--background-color);
     color: var(--text-color-dark);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
 }
+
 
 .contenedor-nosotros {
     background-color: var(--container-background-color);
