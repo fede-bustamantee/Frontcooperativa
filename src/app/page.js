@@ -6,7 +6,7 @@ import ShowAlumno from "./componentes/ShowAlumnoInicio";
 import ShowPagos from "./componentes/ShowPagosInicio";
 
 export default function Home() {
-  const [stats, setStats] = useState([]);
+  const [stats, setStats] = useState([]); //maneja el estado de stats, que almacena los datos de /api/stats
   const [statsInit, setStatsInit] = useState([]);
 
   useEffect(() => {

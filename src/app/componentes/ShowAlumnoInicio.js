@@ -11,7 +11,7 @@ export default function ShowAlumno() {
     const fetchAlumnos = async () => {
       try {
         // Obtener los últimos 2 alumnos creados
-        const response = await fetch("/api/alumnos?limit=2");
+        const response = await fetch("/api/alumnos?limit=2");//Usas fetch para obtener los alumnos desde /api/alumnos?limit=2
         const data = await response.json();
         setAlumnos(data);
       } catch (error) {
